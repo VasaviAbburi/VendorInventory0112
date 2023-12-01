@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="XpF-Drkn20668vBJqx96Jg" Reference="3vLRwJDn6Ey17vwqXKaQvg/7TdnY_sshkO6nxhqwo4TlQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://acme-test.uipath.com/vendors/inventory/DE325476" CvTextArea="1202, 103, 52, 16" CvTextArgument="Log Out" CvType="Text" DesignTimeRectangle="1188, 85, 80, 50" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Log Out'" FullSelectorArgument="&lt;webctrl aaname='Log Out' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Log Out' tag='A' type='' class='' check:text='Log Out' /&gt;" Guid="377cff32-19a2-4390-bfb1-66ad9c91baee" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Vendor Inventory' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="dd918b8cedf734f1a98ee0d28d9b5b67.png" xmlns="">0QD463MTkc0S0hmYYvJZe4w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

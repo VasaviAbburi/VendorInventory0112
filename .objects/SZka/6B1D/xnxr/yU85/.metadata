@@ -1,0 +1,13 @@
+﻿{
+  "Name": "VendorCodeElement",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "yU85M_T7jk252vxM6idqwQ",
+  "Reference": "3vLRwJDn6Ey17vwqXKaQvg/yU85M_T7jk252vxM6idqwQ",
+  "ParentRef": "3vLRwJDn6Ey17vwqXKaQvg/xnxrxSDAcUiFbQWqkVPF-g",
+  "Created": "2023-11-26T03:45:24.360179Z",
+  "Updated": "2023-11-26T03:45:24.360179Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

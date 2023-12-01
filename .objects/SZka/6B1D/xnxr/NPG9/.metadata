@@ -1,0 +1,16 @@
+﻿{
+  "Name": "VendorInventoryTableScreen",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "NPG9FsXYbU2iAwsgoMYD2g",
+  "Reference": "3vLRwJDn6Ey17vwqXKaQvg/NPG9FsXYbU2iAwsgoMYD2g",
+  "ParentRef": "3vLRwJDn6Ey17vwqXKaQvg/xnxrxSDAcUiFbQWqkVPF-g",
+  "Created": "2023-11-26T06:05:00.1822654Z",
+  "Updated": "2023-11-26T06:07:47.9939421Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

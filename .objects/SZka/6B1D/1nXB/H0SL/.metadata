@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Txt_Login",
+  "Type": "Element",
+  "TaxonomyType": "Text",
+  "Id": "H0SLKP28Q0WfwkkivMCyuA",
+  "Reference": "3vLRwJDn6Ey17vwqXKaQvg/H0SLKP28Q0WfwkkivMCyuA",
+  "ParentRef": "3vLRwJDn6Ey17vwqXKaQvg/1nXBVMOGqkui0SBYwTW8_A",
+  "Created": "2023-11-25T15:43:36.6646769Z",
+  "Updated": "2023-11-25T15:46:02.9842604Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

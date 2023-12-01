@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OiTvELdVBEqjb3QrrV6Jiw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://acme-test.uipath.com/vendors/inventory" CvTextArea="199, 434, 66, 13" CvTextArgument="FR065748" CvType="Text" DesignTimeRectangle="183, 424, 485, 34" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'FR065748'" FullSelectorArgument="&lt;webctrl id='vendorTaxId' /&gt;" FuzzySelectorArgument="&lt;webctrl id='vendorTaxId' tag='SELECT' type='' class='form-control' aaname='' /&gt;" Guid="ef221faf-bd05-4e0a-9475-778b08ec3f0c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Vendor Inventory' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="181, 402, 93, 13" CvTextArgument="Vendor Code:" CvType="Text" DesignTimeRectangle="183, 399, 91, 20" ElementType="Text" FriendlyName="'Vendor Code'" FullSelectorArgument="&lt;webctrl tag='LABEL' aaname='Vendor Code:' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='Vendor Code:' type='' class='' check:text='Vendor Code:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF8AAAAYCAYAAACcESEhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH6SURBVGhD7ZbdsYQgDIVvT7ZFKVRjKbaxRbCg+QUUdtSbl5yZPKyLyclHYPcvuczk8A3l8A3l8A3l8A3l8A3l8A11wN9iWpYlLWFNn/0B67OG47u4wZMn9UlryLmXmN7Ins2nULyLuN/Gc55h8rcUd3MhrYo+FqqfP6UX4eNAdSLcauZx+MVrxxhODp0I3CQIOUZi7Qq5eo3SSdq/27qNoJcj9Mbj+yFGmOreYLBPbRFrz9crGnu+4HIxwHzn0xHlpHpDqgIQBLdzxI8QRU+nsa1ZB/YjQezRuSqpTnPHFBAawqje2POAyxR8WoSFMSm8BCbapGCC4GOROh9/bjeszsGbQc0DZILfgw7CNQ37WsN6E55HXC4k4IvGims0AR00E0cBsNGUgKIh4GZKU9oorudGimbWaM2sKRrXm/fcRjvptRT8nIl2NcJxxOk5LwJrHoDfTlHR7/DrwWEduejxsN4d+KLOiTR8SowhinaNCg3hc27KgZCwTn2ki3AN5J2Cn98+oGkADKo6raf1JjyPuFyogp9FyeuE3JAKhD2EnyVy6+DmZ39wR80y6Dbku2/94DIH3MD2GmrhU7LenVUXEhMzAz9LQYn5b6k4wigNRPuYhb+LJptDekFd1Ssae77g8ht813/J4RvK4RvK4RvK4RvK4RvK4ZsppS9OlivGYwA7RgAAAABJRU5ErkJggg==" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e666f8779c059c172f7b47b46e664831.png" xmlns="">0Q10C52SAe0yLGkaJAXnNBQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

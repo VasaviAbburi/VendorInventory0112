@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Vendors",
+  "Type": "Screen",
+  "Id": "todIVOgbxUmkK46FSeB7pw",
+  "Reference": "3vLRwJDn6Ey17vwqXKaQvg/todIVOgbxUmkK46FSeB7pw",
+  "ParentRef": "3vLRwJDn6Ey17vwqXKaQvg/6B1DXUN4UEW7MeQq831QBQ",
+  "Created": "2023-11-28T07:37:03.2737538Z",
+  "Updated": "2023-11-28T07:37:08.5819776Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

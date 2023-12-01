@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Link_VendorInventory",
+  "Type": "Element",
+  "TaxonomyType": "Link",
+  "Id": "wYw8wfUHVUizB3VNbuFuqA",
+  "Reference": "3vLRwJDn6Ey17vwqXKaQvg/wYw8wfUHVUizB3VNbuFuqA",
+  "ParentRef": "3vLRwJDn6Ey17vwqXKaQvg/todIVOgbxUmkK46FSeB7pw",
+  "Created": "2023-11-28T07:46:49.6227453Z",
+  "Updated": "2023-11-28T07:52:38.1518363Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

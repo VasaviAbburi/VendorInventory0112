@@ -1,0 +1,16 @@
+﻿{
+  "Name": "list_Vendors",
+  "Type": "Element",
+  "TaxonomyType": "Listbox",
+  "Id": "c91fa2IZbU6boP7p0TeXEw",
+  "Reference": "3vLRwJDn6Ey17vwqXKaQvg/c91fa2IZbU6boP7p0TeXEw",
+  "ParentRef": "3vLRwJDn6Ey17vwqXKaQvg/todIVOgbxUmkK46FSeB7pw",
+  "Created": "2023-11-28T07:37:58.3439222Z",
+  "Updated": "2023-11-28T07:39:44.3175767Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,12 @@
+﻿{
+  "Name": "VendorInventory",
+  "Type": "Screen",
+  "Id": "xnxrxSDAcUiFbQWqkVPF-g",
+  "Reference": "3vLRwJDn6Ey17vwqXKaQvg/xnxrxSDAcUiFbQWqkVPF-g",
+  "ParentRef": "3vLRwJDn6Ey17vwqXKaQvg/6B1DXUN4UEW7MeQq831QBQ",
+  "Created": "2023-11-26T03:43:59.2277128Z",
+  "Updated": "2023-11-26T03:43:59.2277128Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

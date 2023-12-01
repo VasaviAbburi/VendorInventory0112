@@ -1,0 +1,274 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SearchForVendor" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_VendorCode" Type="InArgument(x:String)" />
+    <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1706,2475</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>SearchForVendor_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="SearchForVendor" sap:VirtualizedContainerService.HintSize="1716,2410" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1654,2299" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <uix:NCheckState sap2010:Annotation.AnnotationText="Search for Vendor code in Acme application" DisplayName="Check App State 'VendorInventoryHomeScreen'" sap:VirtualizedContainerService.HintSize="1616,2071" sap2010:WorkflowViewState.IdRef="NCheckState_1" Version="V3">
+          <uix:NCheckState.IfExists>
+            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="1112,1743" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1050,143" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Vendor Inventory page is available&quot;]" />
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ACME System 1 - Vendor Inventory" sap:VirtualizedContainerService.HintSize="1050,1445" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="3245920a-b5b7-4d95-8b49-32d92b7d82cb" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,1228" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NCheckState DisplayName="Check App State 'VendorCodeElement'" sap:VirtualizedContainerService.HintSize="954,1113" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="3245920a-b5b7-4d95-8b49-32d92b7d82cb" Version="V3">
+                        <uix:NCheckState.IfExists>
+                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,896" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Vendor code field is available in Acme application&quot;]" />
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Vendor Code'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="3245920a-b5b7-4d95-8b49-32d92b7d82cb" Text="[in_VendorCode]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/vendors/inventory" CvTextArea="199, 430, 67, 13" CvTextArgument="DE325476" CvType="Text" DesignTimeRectangle="183, 420, 485, 34" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'DE325476'" FullSelectorArgument="&lt;webctrl id='vendorTaxId' /&gt;" FuzzySelectorArgument="&lt;webctrl id='vendorTaxId' tag='SELECT' type='' class='form-control' aaname='' /&gt;" Guid="31e34270-bcd5-4827-bb2e-8a27f4e87691" InformativeScreenshot="21da7e67ad53eb1aba6204f5160c05aa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Vendor Inventory' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvTextArea="181, 398, 92, 13" CvTextArgument="Vendor Code:" CvType="Text" DesignTimeRectangle="183, 395, 91, 20" ElementType="Text" FriendlyName="'Vendor Code'" FullSelectorArgument="&lt;webctrl tag='LABEL' aaname='Vendor Code:' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='Vendor Code:' type='' class='' check:text='Vendor Code:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF8AAAAYCAYAAACcESEhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH6SURBVGhD7ZbdsYQgDIVvT7ZFKVRjKbaxRbCg+QUUdtSbl5yZPKyLyclHYPcvuczk8A3l8A3l8A3l8A3l8A3l8A11wN9iWpYlLWFNn/0B67OG47u4wZMn9UlryLmXmN7Ins2nULyLuN/Gc55h8rcUd3MhrYo+FqqfP6UX4eNAdSLcauZx+MVrxxhODp0I3CQIOUZi7Qq5eo3SSdq/27qNoJcj9Mbj+yFGmOreYLBPbRFrz9crGnu+4HIxwHzn0xHlpHpDqgIQBLdzxI8QRU+nsa1ZB/YjQezRuSqpTnPHFBAawqje2POAyxR8WoSFMSm8BCbapGCC4GOROh9/bjeszsGbQc0DZILfgw7CNQ37WsN6E55HXC4k4IvGims0AR00E0cBsNGUgKIh4GZKU9oorudGimbWaM2sKRrXm/fcRjvptRT8nIl2NcJxxOk5LwJrHoDfTlHR7/DrwWEduejxsN4d+KLOiTR8SowhinaNCg3hc27KgZCwTn2ki3AN5J2Cn98+oGkADKo6raf1JjyPuFyogp9FyeuE3JAKhD2EnyVy6+DmZ39wR80y6Dbku2/94DIH3MD2GmrhU7LenVUXEhMzAz9LQYn5b6k4wigNRPuYhb+LJptDekFd1Ssae77g8ht813/J4RvK4RvK4RvK4RvK4RvK4ZsppS9OlivGYwA7RgAAAABJRU5ErkJggg==" SearchSteps="Selector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NTypeInto>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Check Inventory'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3245920a-b5b7-4d95-8b49-32d92b7d82cb" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/vendors/inventory" CvElementArea="182, 467, 130, 37" CvTextArea="194, 478, 104, 17" CvTextArgument="Check Inventory" CvType="Button" DesignTimeRectangle="183, 469, 127, 34" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Check Inventory'" FullSelectorArgument="&lt;webctrl aaname='Check Inventory' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Check Inventory' tag='BUTTON' type='button' class='btn btn-primary' check:text='Check Inventory' /&gt;" Guid="f7481d65-25a6-4625-8838-d9816e80ebd8" InformativeScreenshot="d9cb380f13c1e188459fcedfa0af3a0b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Vendor Inventory' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvTextArea="172, 300, 185, 16" CvTextArgument="/ Vendors - Vendor Inventory" CvType="Text" DesignTimeRectangle="169, 297, 187, 20" ElementType="ListItem" FriendlyName="'Vendors -'" FullSelectorArgument="&lt;webctrl aaname='Vendors - Vendor Inventory' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Vendors - Vendor Inventory' tag='LI' type='' class='breadcrumb-item active' check:text='Vendors - Vendor Inventory' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAL8AAAAYCAYAAACr8yxQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPjSURBVHhe7Zg7mqswDIXvrtkDi2ARt2MPQ5oUqVKkyQ5Se2wZYb2wgcncx6Di/yYg20hHxyaZX6/XKzjOGXHzO6fFze+cFje/c1rc/M5pcfM7p8XN75yWbea/X8PH9W7HKNMQuq4P48OIRaahC90wmbGv8F3r7uUx9rH+IUxG7PV6hLHvQj8+jNhXmMLQdWGYrNgBoIdrNfxJUl3rXnoHm8x/v36E692OcSoNfoyhf2eTCP+K+atGbBwMx3HzH2WD+e/h+nENdzOmWTv94H4/hgdc503SxaYBy/3EXPSYmoBjxHrzRsLYIM0PDcQ4FzBtlGHE+TmWc7bH7wU2IquH3F9yrNQPtQ2xfpKTWI/lO8T6419qfl4P1S5pS9Y28pTmh7WGkeW7HG7WRpnzZ/OXXKi2tT7nDY33S238Pj1k03P62FeMD791bpALqblt/q1feRZygvwkom8E/XbgxpgLXJKcjYJx+QZBo2McronI4hqeRUWRDbQaugfIT24gqkmjftzYQg8cn81U8sv1FD1knF/P2i5rG4j683ypN9anew3j5/XhM91gbO1GnyFOdeQ6yOucpx5fcsvr01yb5n/eLuFye5qxNbiZI7To9FmdOLRQmTQXUQkaKc/TxuLxRm5vQefAcm7Vb2yeen1UL60dn2PFBUIPrTdfg+tJDUZqWubm8Wu58Gfx+Vbfaa51X8Rr8UZKNMz/DLfLJdyeVqyCaCBNApKMRWtwfF0ULjaJwz09l8et+blhmIecewhmIG7YZv1V81v1EcMZc3H+d5mfjacGg8+yxswR81t9p8/TeUZSbngvfRbz6+Z/3sLlcgtPK1ZFnjalCDNJRl2U95u/ADFokDYQj6+PyZA8qCEizfoNA5ecrfr+svnJNdV5LZeCzoU/K8XLfLNvLfOTNdJ8WXfV/Ee+8izMu26SSQlxNXVRrCKLMPyU1fEVERn2GntBI6jnteqvmt/KjeqltdMHkTYBY7f5Mb/8o7jcbz1Lx/mzUrzoYPWd5mrGIym3/ENYa141//Z/cVrk4tIpyQXIzVg3xBZRSBzmkvXgmphHXDfN2DyxNgLrpPrlWo36q+YXYzFG9ACtSJxfa20VYn1tKmMNmKNrlbnwuVv6TNfL48vG59c6zxnMjeo9UzH/vn9xWujikZx4FiyxJlBGFbYYKxLvj6ahce2Kkei9ZXzDHDuAda2G1OpvmT+Sdc1z8d97Si9rbUNbxRHzYz1GrevatvuMc6XhcS36BtR5Ius1N37wOs7/TjK/dQC7+Z2fTnqTGV95Em5+54cy/7ZaOfUTbn7ntLj5ndPi5ndOi5vfOSmv8AmRsnbULwz8fgAAAABJRU5ErkJggg==" SearchSteps="Selector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Clicked on CheckInventory&quot;]" />
+                          </Sequence>
+                        </uix:NCheckState.IfExists>
+                        <uix:NCheckState.IfNotExists>
+                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[New SystemException(&quot;Vendor code field is not available in Acme application&quot;).ToString]" />
+                          </Sequence>
+                        </uix:NCheckState.IfNotExists>
+                        <uix:NCheckState.Target>
+                          <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/vendors/inventory" ContentHash="OiTvELdVBEqjb3QrrV6Jiw" CvTextArea="199, 434, 66, 13" CvTextArgument="FR065748" CvType="Text" DesignTimeRectangle="183, 424, 485, 34" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'VendorCodeElement'" FullSelectorArgument="&lt;webctrl id='vendorTaxId' /&gt;" FuzzySelectorArgument="&lt;webctrl id='vendorTaxId' tag='SELECT' type='' class='form-control' aaname='' /&gt;" Guid="ef221faf-bd05-4e0a-9475-778b08ec3f0c" InformativeScreenshot="e666f8779c059c172f7b47b46e664831.png" Reference="3vLRwJDn6Ey17vwqXKaQvg/yU85M_T7jk252vxM6idqwQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Vendor Inventory' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CvTextArea="181, 402, 93, 13" CvTextArgument="Vendor Code:" CvType="Text" DesignTimeRectangle="183, 399, 91, 20" ElementType="Text" FriendlyName="'VendorCodeElement'" FullSelectorArgument="&lt;webctrl tag='LABEL' aaname='Vendor Code:' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='Vendor Code:' type='' class='' check:text='Vendor Code:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF8AAAAYCAYAAACcESEhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH6SURBVGhD7ZbdsYQgDIVvT7ZFKVRjKbaxRbCg+QUUdtSbl5yZPKyLyclHYPcvuczk8A3l8A3l8A3l8A3l8A3l8A11wN9iWpYlLWFNn/0B67OG47u4wZMn9UlryLmXmN7Ins2nULyLuN/Gc55h8rcUd3MhrYo+FqqfP6UX4eNAdSLcauZx+MVrxxhODp0I3CQIOUZi7Qq5eo3SSdq/27qNoJcj9Mbj+yFGmOreYLBPbRFrz9crGnu+4HIxwHzn0xHlpHpDqgIQBLdzxI8QRU+nsa1ZB/YjQezRuSqpTnPHFBAawqje2POAyxR8WoSFMSm8BCbapGCC4GOROh9/bjeszsGbQc0DZILfgw7CNQ37WsN6E55HXC4k4IvGims0AR00E0cBsNGUgKIh4GZKU9oorudGimbWaM2sKRrXm/fcRjvptRT8nIl2NcJxxOk5LwJrHoDfTlHR7/DrwWEduejxsN4d+KLOiTR8SowhinaNCg3hc27KgZCwTn2ki3AN5J2Cn98+oGkADKo6raf1JjyPuFyogp9FyeuE3JAKhD2EnyVy6+DmZ39wR80y6Dbku2/94DIH3MD2GmrhU7LenVUXEhMzAz9LQYn5b6k4wigNRPuYhb+LJptDekFd1Ssae77g8ht813/J4RvK4RvK4RvK4RvK4RvK4ZsppS9OlivGYwA7RgAAAABJRU5ErkJggg==" SearchSteps="Selector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NCheckState.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NCheckState>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAReSURBVFhHvZdtbFNlFMcf3SxUfI0miLAEWdShCV+EGD9oUJBJAobwQb8IGklkKEQkcy8MZK90tGsnZbxsvkDmxsYkS8QFPhDYLIy+sbv2rhW3dYPFbGyVbYwJJMu2wzm3Prd317ZCc+uHf9vnPC/n13PPc57nMrZX6EPdQo39zyKf1wgAZJWQ2sJtzYVrkw+lDT9G5UbBZWB5TmC7XIlRHgnXJ4hSyecwAYwxAzawM/1EoKFSvLEh97eBjOw4xedmNg9k7LSFRO2sloEMg2Po0x3n+4tYMUaiUIr0SAiAiL5xwfrGqyvSt69hiZZuXzv6cwP+cQVAoRveqQtsizRBS33vHV6cTAD5agA0rG7o+SLSpHg0ODG9aGlFR+vy+kCl0l4p3HgpKkC6RgAA8GxSqQfY5zZgm22wq3XwFO+zOIeiA6z5OQyQctBXpTd6BdwZwrsNPVZuV2vJD3/YWOFl9xNmr5hULGwiW8v1OxvZpmZg5SKw7a2Y8e3Ax5c5g9EB1p4MA+hNnjssH7dlth2WHusMcrta8yt8wHLswIpwbEHbUW5P/e4KsK0XJDX2jBVw+30DPGkR7awIt8pOJ7xR03WO29VadNg/Ke1tLDJPfyvuUfbtbu5fn+MIvqK0HYmVAzMAzKJTAdCsXEQpBJimMQQwx+TNjzRm6PbUQ/x3lWc4cQC60nYZYOEhP+jxsTxqbAfMp3JurxZHNAY44p/iAHpFBB63eIF9jbmBJVhn9Bi5vdanPYAcASUA/mtgu7H24+H2nLVDttdoDZAaBWAB7Q4CwLo/d38cAE9Z7hsg4iOIC+B9BcDsfR6XdGrhFltW3XWe29VKq/JPSAAGHFsiyPs9LgBlJcQk8mGFA5ZlhxX1gTPcrlbKobCjOWavidvjAnjreEAG+Ph03yn21SVgmZfg9druAW5XK9mI2Y5HOct2gFUIbuH25w/EAfBmTRjgqH9ks1RK6VDBx9B5a+IF3sc1DbCE5TqoBEvb7drfE/N431xrx4MDrKwPA5D0Zeg8FxehwXvckHfh+icmVzCt7vfRxTkt/VmMzopinLv1IrxW03VTOTdaBKpjAbynOo6b/hzfwj46hxmO/ZQPGGZdGYac2plYZOgOSU4+s8HoFKxSzk2hHKBHg3VgntUnnxExI6AGIH3Y1NfGdmAufInHKk2ik48umBgRsusK3LDhbL9c6biYAZ1suyglMUbpILfX+R8QgNTUO77sg8beX58xeuAxrO3JeL7Pt4jjG3+5+lPf3UldpDlvH+++mXqgY/LlSj8srw1kcfsxMcZhFA1ASx0WYgDglSzhl9IfPcNpUQHwUro20iStNQsf47+v5ZjN6072lpy4Mrqw3BV81eSYKSPKjCq1D0ptc4Qx/6UK4a8XjY6hdcmUoJi86FsCCL2aIUQSdszGRHsYvylMWusRFNuLotoReh2UXs1CDXpXo9cl2l5ElwjxtblPEn50o0ZQQUmGf74ToZlro0+h8x4tMHhuvyezngAAAABJRU5ErkJggg==" InformativeScreenshot="d00743a3f0b31ac4bf9a69c5cd0100f0.jpg" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Vendor Inventory' /&gt;" Title="ACME System 1 - Vendors - Search" Url="https://acme-test.uipath.com/vendors/inventory" />
+                </uix:NApplicationCard.TargetApp>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NApplicationCard>
+            </Sequence>
+          </uix:NCheckState.IfExists>
+          <uix:NCheckState.IfNotExists>
+            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[New SystemException(&quot;Vendor Inventory page is not available&quot;).ToString]" />
+            </Sequence>
+          </uix:NCheckState.IfNotExists>
+          <uix:NCheckState.Target>
+            <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/vendors/inventory" ContentHash="jXptpPSYfEa1S64zNq1MKQ" CvTextArea="110, 226, 440, 38" CvTextArgument="Vendors - Vendor Inventory" CvType="Text" DesignTimeRectangle="113, 223, 1140, 50" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'VendorInventoryHomeScreen'" FullSelectorArgument="&lt;webctrl visibleinnertext='Vendors - Vendor Inventory' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl visibleinnertext='Vendors - Vendor Inventory' tag='H1' type='' class='page-header' aaname='                                                                                                                                                                                     Vendors - Vendor Inventory                                                         ' check:text='Vendors - Vendor Inventory' /&gt;" Guid="19ee7465-bfa4-4f2b-9f59-36f9e6a99dc1" InformativeScreenshot="d66e9d38d167a0b2fcfb6664079c62bc.png" Reference="3vLRwJDn6Ey17vwqXKaQvg/HilD5g6x3EqHJihsc0iHFw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Vendor Inventory' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+              <uix:TargetAnchorable.Anchors>
+                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                  <uix:Target CvTextArea="127, 304, 230, 16" CvTextArgument="Home / Vendors - Vendor Inventory" CvType="Text" DesignTimeRectangle="113, 293, 1140, 36" FriendlyName="'VendorInventoryHomeScreen'" FullSelectorArgument="&lt;webctrl visibleinnertext='Home Vendors - Vendor Inventory' /&gt;" FuzzySelectorArgument="&lt;webctrl visibleinnertext='Home Vendors - Vendor Inventory' tag='OL' type='' class='breadcrumb' aaname='                                                                                                                                                                                                                                                                                                   ' check:text='Home&amp;#xA;                                                                                              ' /&gt;" ImageBase64="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" SearchSteps="Selector" />
+                </scg:List>
+              </uix:TargetAnchorable.Anchors>
+            </uix:TargetAnchorable>
+          </uix:NCheckState.Target>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </uix:NCheckState>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1620,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence sap:VirtualizedContainerService.HintSize="450,382" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;Vendor code is unable to search due to&quot;+exception.Message]" />
+              <Throw Exception="[new SystemException(&quot;Vendor code is unable to search due to&quot;+exception.Message)]" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Throw_1" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+  </Sequence>
+</Activity>

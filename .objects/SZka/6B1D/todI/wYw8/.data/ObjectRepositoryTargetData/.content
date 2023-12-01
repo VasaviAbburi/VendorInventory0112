@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="rrlBQA4WjEK_CHBWg6XWhg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://acme-test.uipath.com/home" DesignTimeRectangle="8, 129, 0, 0" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Vendor Inventory'" FullSelectorArgument="&lt;webctrl aaname='Vendor Inventory' parentid='dashmenu' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Vendor Inventory' parentid='dashmenu' tag='A' type='' class='' check:innerText='Vendor Inventory' /&gt;" Guid="f17bc36d-8681-4d2c-b0c4-0b53c1b46420" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Dashboard' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
